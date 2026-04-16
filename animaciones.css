@@ -1,0 +1,87 @@
+/* =============================================
+   ANIMACIONES SCROLL · CINEYAMPI
+   ============================================= */
+
+/* Estado inicial de los elementos antes de ser visibles */
+section,
+.card,
+.coming-soon,
+.contact-box,
+.logo,
+.tagline {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Clase que se añade con JavaScript cuando el elemento entra al viewport */
+.elemento-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Efecto especial para el header (aparece más rápido) */
+.logo,
+.tagline {
+    transition-duration: 0.5s;
+}
+
+/* Retrasos escalonados para las tarjetas dentro de grid (efecto cascada) */
+.grid-2 .card:first-child {
+    transition-delay: 0.1s;
+}
+.grid-2 .card:last-child {
+    transition-delay: 0.25s;
+}
+
+/* Efecto sutil para el contador regresivo */
+.coming-soon .countdown-placeholder .count-item {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease 0.2s,
+                transform 0.5s ease 0.2s;
+}
+
+.coming-soon.elemento-visible .count-item {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Los elementos del footer también se animan */
+footer .social-links,
+footer p {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.6s ease,
+                transform 0.6s ease;
+}
+
+footer.elemento-visible .social-links,
+footer.elemento-visible p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Pequeño retraso entre elementos del footer */
+footer.elemento-visible .social-links {
+    transition-delay: 0.1s;
+}
+footer.elemento-visible p:first-of-type {
+    transition-delay: 0.2s;
+}
+footer.elemento-visible p:last-of-type {
+    transition-delay: 0.3s;
+}
+
+/* Para móviles: reducimos un poco el movimiento si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
