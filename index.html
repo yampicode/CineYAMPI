@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineYampi · Cine venezolano independiente</title>
+
+  <!-- Font Awesome para iconos (gratis) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Animaciones al hacer scroll -->
+<link rel="stylesheet" href="animaciones.css">
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <i class="fas fa-film"></i>
+        <h1>CineYampi</h1>
+        <span>🇻🇪</span>
+      </div>
+      <div class="tagline">
+        <span><i class="fas fa-map-pin"></i> Hecho en Venezuela</span>
+        <span class="badge"><i class="fas fa-play"></i> Próximamente · FAST Channel</span>
+      </div>
+    </header>
+
+    <!-- SECCIÓN: ¿QUÉ ES CINEYAMPI? -->
+    <section>
+      <h2><i class="fas fa-question-circle"></i> ¿Qué es CineYampi?</h2>
+      <div class="grid-2">
+        <div class="card">
+          <i class="fas fa-video"></i>
+          <h3>Ventana para nuestro cine</h3>
+          <p style="margin-bottom: 20px; font-size: 1.05rem;">
+            CineYampi nace para darle visibilidad al talento independiente venezolano. Un espacio donde cortometrajes, documentales y películas de autor encuentren a su audiencia sin barreras.
+          </p>
+          <p>
+            Creemos en las historias que reflejan nuestra identidad, nuestras calles, nuestra gente. Seleccionamos contenido directamente de la mano de cineastas emergentes y festivales nacionales.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-globe"></i>
+          <h3>Streaming gratuito · FAST</h3>
+          <p style="margin-bottom: 20px;">
+            CineYampi operará como un canal FAST (Free Ad-Supported TV). ¿Eso qué significa? Que podrás disfrutar de todo nuestro catálogo <strong>totalmente gratis</strong>, con pausas publicitarias que permiten sostener el proyecto y remunerar a los creadores.
+          </p>
+          <p>
+            <i class="fas fa-tv" style="margin-right: 8px;"></i> Canal lineal 24/7 · Disponible en Smart TVs, web y dispositivos móviles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: ¿CÓMO FUNCIONA? -->
+    <section>
+      <h2><i class="fas fa-cogs"></i> ¿Cómo funciona?</h2>
+      <div class="grid-2">
+        <div>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle"></i> <strong>1. Curamos contenido venezolano:</strong> trabajamos con cineastas independientes y festivales para licenciar sus obras.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>2. Empaquetamos un canal 24/7:</strong> las películas y cortos se organizan en una programación continua.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>3. Distribución internacional:</strong> mediante plataformas FAST y tecnología de socios como SeaOvers, el canal llega a toda Latinoamérica.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>4. Tú disfrutas gratis:</strong> solo necesitas conexión a internet y el dispositivo que prefieras.</li>
+          </ul>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <div style="background: #f5c51810; padding: 25px; border-radius: 60px; text-align: center;">
+            <i class="fas fa-ad" style="font-size: 3rem; color: #f5c518; margin-bottom: 10px;"></i>
+            <p style="font-style: italic;">
+              "La publicidad hace posible que el cine venezolano sea accesible para todos."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: PRÓXIMAMENTE -->
+    <section style="border-bottom: none;">
+      <h2><i class="fas fa-clock"></i> Próximamente</h2>
+      <div class="coming-soon">
+        <h3><i class="fas fa-satellite-dish"></i> Lanzamiento del canal FAST</h3>
+        <p style="font-size: 1.2rem; margin-bottom: 25px;">
+          Estamos afinando los últimos detalles técnicos y construyendo el mejor catálogo de cine independiente venezolano.
+        </p>
+
+        <!-- Simulador de cuenta regresiva (placeholder estático) -->
+        <div class="countdown-placeholder">
+          <div class="count-item">
+            <div class="count-number">
+              —
+            </div>
+            <div class="count-label">
+              Días
+            </div>
+          </div>
+          <div class="count-item">
+            <div class="count-number">
+              —
+            </div>
+            <div class="count-label">
+              Horas
+            </div>
+          </div>
+          <div class="count-item">
+            <div class="count-number">
+              —
+            </div>
+            <div class="count-label">
+              Min
+            </div>
+          </div>
+        </div>
+        <p style="margin: 20px 0 10px;">
+          📢 Muy pronto anunciaremos la fecha oficial y las plataformas donde podrás vernos.
+        </p>
+        <button class="btn btn-outline" id="notifyBtn" style="margin-top: 20px;"><i class="far fa-bell"></i> Avísame del lanzamiento</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: CONTACTO PARA CINEASTAS -->
+    <section style="border-bottom: none; padding-top: 20px;">
+      <h2><i class="fas fa-handshake"></i> ¿Eres cineasta o productor?</h2>
+      <div class="contact-box">
+        <p style="margin-bottom: 30px; font-size: 1.1rem;">
+          <i class="fas fa-envelope-open-text" style="color: #f5c518; margin-right: 10px;"></i> Si tienes un cortometraje, documental o película y quieres que forme parte de CineYampi, escríbenos. Estamos construyendo el catálogo desde cero y queremos escuchar tu proyecto.
+        </p>
+
+        <form id="contactForm" action="https://formspree.io/f/mzdydnwk" method="post">
+          <div class="grid-2" style="gap: 20px;">
+            <div class="form-group">
+              <input type="hidden" name="_subject" value="Nuevo mensaje de CineYampi">
+              <input type="text" id="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Correo electrónico" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="asunto" placeholder="Asunto (ej. Propuesta de cortometraje)">
+          </div>
+          <div class="form-group">
+            <textarea rows="4" id="mensaje" placeholder="Cuéntanos sobre tu proyecto... ¿Género? ¿Duración? ¿Dónde se ha presentado?" required></textarea>
+          </div>
+          <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Enviar mensaje</button>
+          <p id="formFeedback" style="margin-top: 18px; color: #2ecc71;"></p>
+        </form>
+        <p style="margin-top: 30px; font-size: 0.95rem; color: #aaa;">
+          <i class="far fa-envelope"></i> O escríbenos directamente a <strong>contacto.cineyampi@gmail.com</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="mailto:contacto.cineyampi@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+      <p>
+        © 2026 CineYampi · Cine venezolano independiente
+      </p>
+      <p style="margin-top: 12px; font-size: 0.85rem;">
+        🇻🇪 Hecho con convicción. Próximamente en toda Latinoamérica.
+      </p>
+    </footer>
+  </div>
+
+<script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
